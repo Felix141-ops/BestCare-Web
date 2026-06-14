@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import '@fontsource/inter';
 import '@/styles/globals.css';
 import RootLayoutWrapper from './layout-wrapper';
 
