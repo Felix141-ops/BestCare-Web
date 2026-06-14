@@ -61,6 +61,13 @@ export interface User {
   createdAt: string;
 }
 
+export type LoginFormData = LoginRequest;
+
+export interface RegisterFormData extends RegisterRequest {
+  confirmPassword: string;
+  agreeToTerms: boolean;
+}
+
 /**
  * Appointment Types
  */

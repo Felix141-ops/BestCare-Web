@@ -17,10 +17,11 @@ export default function RegisterPage() {
   const [formData, setFormData] = useState<RegisterFormData>({
     firstName: '',
     lastName: '',
-    email: '',
-    phone: '',
-    password: '',
-    confirmPassword: '',
+     email: '',
+     phone: '',
+     password: '',
+     confirmPassword: '',
+     agreeToTerms: false,
   });
 
   // Redirect if already authenticated

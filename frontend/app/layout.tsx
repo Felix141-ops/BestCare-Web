@@ -1,9 +1,7 @@
 import type { Metadata } from 'next';
-import '@fontsource/inter';
 import '@/styles/globals.css';
 import RootLayoutWrapper from './layout-wrapper';
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export const metadata: Metadata = {
   title: 'BestCare Hospital - Quality Healthcare Services',
@@ -23,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.variable} font-sans`}>
+      <body className="font-sans">
         <RootLayoutWrapper>{children}</RootLayoutWrapper>
       </body>
     </html>
