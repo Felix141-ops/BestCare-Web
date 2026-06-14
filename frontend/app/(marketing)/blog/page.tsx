@@ -111,7 +111,7 @@ export default function BlogPage() {
         {/* Search & Filters */}
         <section className="py-8 bg-white border-b border-gray-200">
           <div className="container-max">
-            <div className="space-y-4">
+            <div className="space-y-4 text-gray-700">
               <Input
                 placeholder="Search articles..."
                 value={searchQuery}

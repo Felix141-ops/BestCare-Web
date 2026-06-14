@@ -101,6 +101,7 @@ export default function RegisterPage() {
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <Input
+                    className="text-gray-900"
                     label="First Name"
                     name="firstName"
                     value={formData.firstName}
@@ -114,6 +115,7 @@ export default function RegisterPage() {
                 </div>
                 <div>
                   <Input
+                    className="text-gray-900"
                     label="Last Name"
                     name="lastName"
                     value={formData.lastName}
@@ -129,6 +131,7 @@ export default function RegisterPage() {
 
               <div>
                 <Input
+                  className="text-gray-900"
                   label="Email Address"
                   type="email"
                   name="email"
@@ -144,12 +147,13 @@ export default function RegisterPage() {
 
               <div>
                 <Input
+                  className="text-gray-900"
                   label="Phone Number"
                   type="tel"
                   name="phone"
                   value={formData.phone}
                   onChange={handleInputChange}
-                  placeholder="+1 (234) 567-8900"
+                  placeholder="(+254) 745678900"
                 />
                 {formErrors.phone && (
                   <p className="mt-1 text-sm text-error">{formErrors.phone}</p>
@@ -158,6 +162,7 @@ export default function RegisterPage() {
 
               <div>
                 <Input
+                  className="text-gray-900"
                   label="Password"
                   type="password"
                   name="password"
@@ -173,6 +178,7 @@ export default function RegisterPage() {
 
               <div>
                 <Input
+                  className="text-gray-900"
                   label="Confirm Password"
                   type="password"
                   name="confirmPassword"

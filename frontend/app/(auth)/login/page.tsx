@@ -90,6 +90,7 @@ export default function LoginPage() {
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <Input
+                  className="text-gray-900"
                   label="Email Address"
                   type="email"
                   name="email"
@@ -105,6 +106,7 @@ export default function LoginPage() {
 
               <div>
                 <Input
+                  className="text-gray-900"
                   label="Password"
                   type="password"
                   name="password"

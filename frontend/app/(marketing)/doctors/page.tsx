@@ -19,7 +19,7 @@ export default function DoctorsPage() {
       specialty: 'Cardiology',
       experience: 15,
       rating: 4.9,
-      fee: '$100',
+      fee: 'Ksh. 5000',
       availability: true,
       languages: ['English', 'Spanish'],
     },
@@ -29,7 +29,7 @@ export default function DoctorsPage() {
       specialty: 'Orthopedics',
       experience: 12,
       rating: 4.8,
-      fee: '$80',
+      fee: 'Ksh. 8000',
       availability: true,
       languages: ['English', 'Mandarin'],
     },
@@ -39,7 +39,7 @@ export default function DoctorsPage() {
       specialty: 'Pediatrics',
       experience: 10,
       rating: 4.9,
-      fee: '$70',
+      fee: 'Ksh. 7000',
       availability: false,
       languages: ['English', 'Spanish'],
     },
@@ -49,7 +49,7 @@ export default function DoctorsPage() {
       specialty: 'Neurology',
       experience: 18,
       rating: 4.7,
-      fee: '$120',
+      fee: 'Ksh. 12000',
       availability: true,
       languages: ['English'],
     },
@@ -59,7 +59,7 @@ export default function DoctorsPage() {
       specialty: 'Dentistry',
       experience: 8,
       rating: 4.8,
-      fee: '$60',
+      fee: 'Ksh. 6000',
       availability: true,
       languages: ['English', 'French'],
     },
@@ -69,7 +69,7 @@ export default function DoctorsPage() {
       specialty: 'Oncology',
       experience: 20,
       rating: 4.9,
-      fee: '$150',
+      fee: 'Ksh. 15000',
       availability: true,
       languages: ['English', 'German'],
     },
@@ -115,7 +115,7 @@ export default function DoctorsPage() {
           <div className="container-max">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* Search */}
-              <div className="md:col-span-2">
+              <div className="md:col-span-2 text-gray-700">
                 <Input
                   placeholder="Search by doctor name or specialty..."
                   value={searchQuery}
@@ -146,7 +146,7 @@ export default function DoctorsPage() {
                 <select
                   value={selectedSpecialty}
                   onChange={(e) => setSelectedSpecialty(e.target.value)}
-                  className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-4 py-2.5 text-gray-700 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 >
                   <option value="all">All Specialties</option>
                   {specialties.map((specialty) => (

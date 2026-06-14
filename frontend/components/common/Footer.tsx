@@ -146,7 +146,7 @@ export const Footer: React.FC = () => {
                   href="tel:+1234567890"
                   className="hover:text-medical-blue transition-colors"
                 >
-                  +1 (234) 567-8900
+                  (+254) 745678900
                 </a>
               </li>
               <li>
@@ -165,8 +165,7 @@ export const Footer: React.FC = () => {
               </li>
               <li>
                 <p className="font-medium text-gray-200">Hours</p>
-                <p>24/7 Emergency Services</p>
-                <p>Mon-Fri: 8 AM - 6 PM</p>
+                <p>24/7 Availability</p>
               </li>
             </ul>
           </div>

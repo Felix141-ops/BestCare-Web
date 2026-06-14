@@ -51,7 +51,7 @@ export default function ContactPage() {
     {
       icon: '📞',
       title: 'Phone',
-      content: '+1 (234) 567-8900',
+      content: '(+254) 745678900',
     },
     {
       icon: '📧',
@@ -61,7 +61,7 @@ export default function ContactPage() {
     {
       icon: '⏰',
       title: 'Hours',
-      content: '24/7 Emergency Services\nMon-Fri: 8 AM - 6 PM',
+      content: '24/7 Operations',
     },
   ];
 
@@ -144,6 +144,7 @@ export default function ContactPage() {
                     <form onSubmit={handleSubmit} className="space-y-4">
                       <div className="grid grid-cols-2 gap-4">
                         <Input
+                          className="text-gray-900"
                           label="Full Name"
                           name="name"
                           value={formData.name}
@@ -152,6 +153,7 @@ export default function ContactPage() {
                           required
                         />
                         <Input
+                          className="text-gray-900"
                           label="Email"
                           type="email"
                           name="email"
@@ -163,12 +165,13 @@ export default function ContactPage() {
                       </div>
 
                       <Input
+                        className="text-gray-900"
                         label="Phone Number"
                         type="tel"
                         name="phone"
                         value={formData.phone}
                         onChange={handleInputChange}
-                        placeholder="+1 (234) 567-8900"
+                        placeholder="(+254) 745678900"
                       />
 
                       <div>
@@ -179,7 +182,7 @@ export default function ContactPage() {
                           name="subject"
                           value={formData.subject}
                           onChange={handleInputChange}
-                          className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                          className="w-full px-4 py-2.5 text-gray-900 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                           required
                         >
                           <option value="">Select a subject</option>
@@ -201,7 +204,7 @@ export default function ContactPage() {
                           onChange={handleInputChange}
                           placeholder="Your message..."
                           rows={5}
-                          className="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                          className="w-full px-4 py-2.5 border text-gray-900 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                           required
                         />
                       </div>
@@ -249,7 +252,7 @@ export default function ContactPage() {
                     <p className="text-gray-600 mb-4">
                       For medical emergencies, call our emergency hotline immediately:
                     </p>
-                    <p className="text-3xl font-bold text-error">+1 (234) 567-8900</p>
+                    <p className="text-3xl font-bold text-error">(+254) 745678900</p>
                     <p className="text-sm text-gray-600 mt-4">
                       Available 24/7 with rapid response medical professionals.
                     </p>
