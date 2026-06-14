@@ -9,7 +9,7 @@ interface DashboardLayoutProps {
   userRole?: 'patient' | 'admin';
 }
 
-export function DashboardLayout({
+function DashboardLayout({
   children,
   userRole = 'patient',
 }: DashboardLayoutProps) {
