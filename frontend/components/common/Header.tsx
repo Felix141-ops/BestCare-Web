@@ -161,7 +161,7 @@ export const Header: React.FC<HeaderProps> = ({
               <svg
                 className={`w-6 h-6 transition-transform ${
                   isMenuOpen ? 'rotate-180' : ''
-                }`}
+                } text-gray-700`}
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"

@@ -77,7 +77,7 @@ export const CTASection: React.FC = () => {
           <div className="mt-12 pt-8 border-t border-white border-opacity-20 flex flex-wrap justify-center gap-8">
             <div>
               <p className="text-blue-100 text-sm">24/7 Emergency Hotline</p>
-              <p className="text-white text-xl font-semibold">+1 (234) 567-8900</p>
+              <p className="text-white text-xl font-semibold">(+254) 745678900</p>
             </div>
             <div>
               <p className="text-blue-100 text-sm">Email Us</p>
